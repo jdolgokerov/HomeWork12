@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWork12</title>
+</head>
+<body>
+    <script>
+        function sum(number) {
+            let sum = number
+
+            return number_2 => {
+                return sum += number_2;
+            }
+        }
+        const addToFive = sum(5);
+
+        console.log(addToFive(5));
+        console.log(addToFive(5));
+        console.log(addToFive(5));
+
+
+        function counter() {
+            let counter = 0;
+
+            const countBy = (number) => {
+                counter += number;
+            }
+
+            return {
+                increment: function () {
+                    countBy(1);
+                },
+                decrement: function () {
+                    countBy(-1);
+                },
+                getCounter: function () {
+                    return counter;
+                }
+            }
+        }
+
+        const counter_1 = counter();
+        const counter_2 = counter();
+
+        console.log('counter_1' ,counter_1.increment());
+        console.log('counter_2' ,counter_2.decrement());
+        console.log('counter_1 result:', counter_1.getCounter());
+        console.log('counter_2 result:', counter_2.getCounter());
+    </script>
+</body>
+</html>
